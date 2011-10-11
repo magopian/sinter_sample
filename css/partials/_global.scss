@@ -1,0 +1,76 @@
+@mixin box {
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+body { background-color: #f0f0f0; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    padding: 1em 0 0.5em;
+}
+#wrapper {
+    @include grid(12);
+    @include sinter-grid-background(12);
+
+    header {
+        @include full(8, 2);
+        h1 {
+            font-size: 120%;
+            margin-top: 1em;
+            text-align: center;
+        }
+        nav {
+            height: 2em;
+            line-height: 2em;
+            margin-bottom: 2em;
+            ul {
+                @include columns(6);
+                @include alpha;
+                background-color: #000;
+                li {
+                    display: inline;
+                    padding-left: 1em;
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
+                }
+            }
+            #login {
+                @include columns(2);
+                @include omega;
+                text-align: right;
+            }
+        }
+    }
+    aside {
+        @include box;
+        @include columns(2);
+        @include omega;
+        background-color: #FFF;        
+        float: right;
+        ul { padding-left: 20px; }
+    }
+    article {
+        @include box;
+        @include columns(10);
+        @include alpha;
+        background-color: #FFF;        
+        clear: left;
+        margin-bottom: 20px;
+        .content {
+            @include prefix(2);
+        }
+        .meta {
+            @include columns(2);
+            @include alpha;
+            @include omega;
+            color: #ccc;
+            padding: 15px 5px;
+        }
+    }
+    footer {
+        @include pad(3);
+        clear: both;
+    }
+}

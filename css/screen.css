@@ -1,0 +1,232 @@
+/*  Sinter Framework
+    https://github.com/idangazit/sinter
+
+    Contains code by Joni Korpi, William Wells, Eric A. Meyer, Nathan Smith,
+    and Christopher M. Eppstein. See LICENSE.txt for full details.
+*/
+/* line 17, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../.virtualenvs/pycoms/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*  Sinter Framework
+    https://github.com/idangazit/sinter
+
+    Contains code by Joni Korpi, William Wells, Eric A. Meyer, Nathan Smith,
+    and Christopher M. Eppstein. See LICENSE.txt for full details.
+
+    Sinter provides a responsive, fixed grid, with 60px columns and 20px
+    gutters. It is intended to be used at the following dimensions:
+
+    320px:  4 columns = 300px + 10px padding
+    480px:  6 columns = 460px + 10px padding
+    768px:  9 columns = 700px + 34px padding
+    960px:  12 columns = 940px + 10px padding
+    1200px: 15 columns = 1180px + 10px padding
+    1280px: 16 columns = 1260px + 10px padding
+*/
+/* line 6, partials/_global.scss */
+body {
+  background-color: #f0f0f0;
+}
+
+/* line 7, partials/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  padding: 1em 0 0.5em;
+}
+
+/* line 11, partials/_global.scss */
+#wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 970 50%, color-stop(1.031%, rgba(0, 0, 0, 0)), color-stop(1.031%, rgba(100, 100, 225, 0.25)), color-stop(7.216%, rgba(100, 100, 225, 0.25)), color-stop(7.216%, rgba(0, 0, 0, 0)), color-stop(9.278%, rgba(0, 0, 0, 0)), color-stop(9.278%, rgba(100, 100, 225, 0.25)), color-stop(15.464%, rgba(100, 100, 225, 0.25)), color-stop(15.464%, rgba(0, 0, 0, 0)), color-stop(17.526%, rgba(0, 0, 0, 0)), color-stop(17.526%, rgba(100, 100, 225, 0.25)), color-stop(23.711%, rgba(100, 100, 225, 0.25)), color-stop(23.711%, rgba(0, 0, 0, 0)), color-stop(25.773%, rgba(0, 0, 0, 0)), color-stop(25.773%, rgba(100, 100, 225, 0.25)), color-stop(31.959%, rgba(100, 100, 225, 0.25)), color-stop(31.959%, rgba(0, 0, 0, 0)), color-stop(34.021%, rgba(0, 0, 0, 0)), color-stop(34.021%, rgba(100, 100, 225, 0.25)), color-stop(40.206%, rgba(100, 100, 225, 0.25)), color-stop(40.206%, rgba(0, 0, 0, 0)), color-stop(42.268%, rgba(0, 0, 0, 0)), color-stop(42.268%, rgba(100, 100, 225, 0.25)), color-stop(48.454%, rgba(100, 100, 225, 0.25)), color-stop(48.454%, rgba(0, 0, 0, 0)), color-stop(50.515%, rgba(0, 0, 0, 0)), color-stop(50.515%, rgba(100, 100, 225, 0.25)), color-stop(56.701%, rgba(100, 100, 225, 0.25)), color-stop(56.701%, rgba(0, 0, 0, 0)), color-stop(58.763%, rgba(0, 0, 0, 0)), color-stop(58.763%, rgba(100, 100, 225, 0.25)), color-stop(64.948%, rgba(100, 100, 225, 0.25)), color-stop(64.948%, rgba(0, 0, 0, 0)), color-stop(67.01%, rgba(0, 0, 0, 0)), color-stop(67.01%, rgba(100, 100, 225, 0.25)), color-stop(73.196%, rgba(100, 100, 225, 0.25)), color-stop(73.196%, rgba(0, 0, 0, 0)), color-stop(75.258%, rgba(0, 0, 0, 0)), color-stop(75.258%, rgba(100, 100, 225, 0.25)), color-stop(81.443%, rgba(100, 100, 225, 0.25)), color-stop(81.443%, rgba(0, 0, 0, 0)), color-stop(83.505%, rgba(0, 0, 0, 0)), color-stop(83.505%, rgba(100, 100, 225, 0.25)), color-stop(89.691%, rgba(100, 100, 225, 0.25)), color-stop(89.691%, rgba(0, 0, 0, 0)), color-stop(91.753%, rgba(0, 0, 0, 0)), color-stop(91.753%, rgba(100, 100, 225, 0.25)), color-stop(97.938%, rgba(100, 100, 225, 0.25)), color-stop(97.938%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 10px, rgba(100, 100, 225, 0.25) 10px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 90px, rgba(100, 100, 225, 0.25) 90px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 170px, rgba(100, 100, 225, 0.25) 170px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 250px, rgba(100, 100, 225, 0.25) 250px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 410px, rgba(100, 100, 225, 0.25) 410px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 490px, rgba(100, 100, 225, 0.25) 490px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 570px, rgba(100, 100, 225, 0.25) 570px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 650px, rgba(100, 100, 225, 0.25) 650px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 730px, rgba(100, 100, 225, 0.25) 730px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 810px, rgba(100, 100, 225, 0.25) 810px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 890px, rgba(100, 100, 225, 0.25) 890px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 970px);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 10px, rgba(100, 100, 225, 0.25) 10px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 90px, rgba(100, 100, 225, 0.25) 90px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 170px, rgba(100, 100, 225, 0.25) 170px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 250px, rgba(100, 100, 225, 0.25) 250px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 410px, rgba(100, 100, 225, 0.25) 410px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 490px, rgba(100, 100, 225, 0.25) 490px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 570px, rgba(100, 100, 225, 0.25) 570px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 650px, rgba(100, 100, 225, 0.25) 650px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 730px, rgba(100, 100, 225, 0.25) 730px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 810px, rgba(100, 100, 225, 0.25) 810px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 890px, rgba(100, 100, 225, 0.25) 890px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 970px);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 10px, rgba(100, 100, 225, 0.25) 10px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 90px, rgba(100, 100, 225, 0.25) 90px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 170px, rgba(100, 100, 225, 0.25) 170px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 250px, rgba(100, 100, 225, 0.25) 250px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 410px, rgba(100, 100, 225, 0.25) 410px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 490px, rgba(100, 100, 225, 0.25) 490px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 570px, rgba(100, 100, 225, 0.25) 570px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 650px, rgba(100, 100, 225, 0.25) 650px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 730px, rgba(100, 100, 225, 0.25) 730px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 810px, rgba(100, 100, 225, 0.25) 810px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 890px, rgba(100, 100, 225, 0.25) 890px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 970px);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 10px, rgba(100, 100, 225, 0.25) 10px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 90px, rgba(100, 100, 225, 0.25) 90px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 170px, rgba(100, 100, 225, 0.25) 170px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 250px, rgba(100, 100, 225, 0.25) 250px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 410px, rgba(100, 100, 225, 0.25) 410px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 490px, rgba(100, 100, 225, 0.25) 490px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 570px, rgba(100, 100, 225, 0.25) 570px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 650px, rgba(100, 100, 225, 0.25) 650px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 730px, rgba(100, 100, 225, 0.25) 730px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 810px, rgba(100, 100, 225, 0.25) 810px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 890px, rgba(100, 100, 225, 0.25) 890px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 970px);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 10px, rgba(100, 100, 225, 0.25) 10px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 90px, rgba(100, 100, 225, 0.25) 90px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 170px, rgba(100, 100, 225, 0.25) 170px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 250px, rgba(100, 100, 225, 0.25) 250px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 410px, rgba(100, 100, 225, 0.25) 410px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 490px, rgba(100, 100, 225, 0.25) 490px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 570px, rgba(100, 100, 225, 0.25) 570px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 650px, rgba(100, 100, 225, 0.25) 650px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 730px, rgba(100, 100, 225, 0.25) 730px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 810px, rgba(100, 100, 225, 0.25) 810px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 890px, rgba(100, 100, 225, 0.25) 890px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 970px);
+  background-position: left top;
+}
+/* line 15, partials/_global.scss */
+#wrapper header {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 160px;
+  padding-right: 160px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 17, partials/_global.scss */
+#wrapper header h1 {
+  font-size: 120%;
+  margin-top: 1em;
+  text-align: center;
+}
+/* line 22, partials/_global.scss */
+#wrapper header nav {
+  height: 2em;
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+/* line 26, partials/_global.scss */
+#wrapper header nav ul {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-left: 0;
+  background-color: #000;
+}
+/* line 30, partials/_global.scss */
+#wrapper header nav ul li {
+  display: inline;
+  padding-left: 1em;
+}
+/* line 33, partials/_global.scss */
+#wrapper header nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 39, partials/_global.scss */
+#wrapper header nav #login {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  text-align: right;
+}
+/* line 46, partials/_global.scss */
+#wrapper aside {
+  background-color: #fff;
+  padding: 5px 0;
+  display: inline;
+  float: left;
+  width: 140px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  background-color: #FFF;
+  float: right;
+}
+/* line 52, partials/_global.scss */
+#wrapper aside ul {
+  padding-left: 20px;
+}
+/* line 54, partials/_global.scss */
+#wrapper article {
+  background-color: #fff;
+  padding: 5px 0;
+  display: inline;
+  float: left;
+  width: 780px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-left: 0;
+  background-color: #FFF;
+  clear: left;
+  margin-bottom: 20px;
+}
+/* line 61, partials/_global.scss */
+#wrapper article .content {
+  padding-left: 160px;
+}
+/* line 64, partials/_global.scss */
+#wrapper article .meta {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #ccc;
+  padding: 15px 5px;
+}
+/* line 72, partials/_global.scss */
+#wrapper footer {
+  padding-left: 240px;
+  padding-right: 240px;
+  clear: both;
+}
+
+/*  Tablet Layout: 768px. 9 columns, 34px outer padding.
+    Inherits styles from: Default Layout.  */
+/*  Mobile Layout: 320px. 4 columns, 10px outer padding.
+    Inherits styles from: Default Layout.  */
+/*  Landscape Mobile Layout: 480px. 6 columns, 10px outer padding.
+    Inherits styles from: Default Layout, 320px Layout.  */
+/* Retina media query.
+   Overrides styles for devices with a
+   device-pixel-ratio of 2+, such as iPhone 4.  */
