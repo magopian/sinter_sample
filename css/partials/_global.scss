@@ -70,7 +70,10 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
     footer {
-        @include pad(3);
+        @include borderbox(6, 10px, 2px);
+        @include empty(3);
+        @include border-radius(10px);
+        background-color: #fff;
         clear: both;
     }
 }
